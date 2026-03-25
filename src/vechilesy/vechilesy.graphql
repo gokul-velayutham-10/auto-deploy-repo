@@ -1,0 +1,24 @@
+type Vechilesy {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input CreateVechilesyInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdateVechilesyInput {
+  id: Int!
+}
+
+type Query {
+  vechilesy: [Vechilesy]!
+  vechilesy(id: Int!): Vechilesy
+}
+
+type Mutation {
+  createVechilesy(createVechilesyInput: CreateVechilesyInput!): Vechilesy!
+  updateVechilesy(updateVechilesyInput: UpdateVechilesyInput!): Vechilesy!
+  removeVechilesy(id: Int!): Vechilesy
+}
